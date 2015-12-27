@@ -9,5 +9,4 @@ COPY bin/startup.sh /usr/local/bin/startup.sh
 
 EXPOSE 8891
 
-ENTRYPOINT ["startup.sh", "--host=0.0.0.0 "]
-CMD ["--engine=slimerjs"]
+ENTRYPOINT ["startup.sh", "--host=0.0.0.0 --engine=slimerjs "]
