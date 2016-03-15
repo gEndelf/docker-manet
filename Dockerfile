@@ -23,7 +23,7 @@ RUN set -ex \
   done
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 4.2.6
+ENV NODE_VERSION 4.4.0
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
@@ -33,7 +33,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
   && rm "node-v$NODE_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
 
 #Install manet with modules
-RUN npm install -g slimerjs phantomjs manet@0.4.9
+RUN npm install -g slimerjs phantomjs manet@0.4.10
 	
 # Clean up
 WORKDIR /
