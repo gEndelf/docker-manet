@@ -33,7 +33,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
   && rm "node-v$NODE_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
 
 #Install manet with modules
-RUN npm install -g slimerjs phantomjs manet@0.4.10
+RUN npm install -g slimerjs phantomjs manet@0.4.11
 	
 # Clean up
 WORKDIR /
